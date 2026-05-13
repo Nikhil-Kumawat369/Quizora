@@ -132,7 +132,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px 60px;;
+    gap: 20px;
 }
 
 /* HomePage Start Quize Btn */
@@ -143,6 +143,8 @@ body {
     padding: 10px 30px 10px 30px;
     border: none;
     border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     font-size: 1.3em;
     font-weight: 900;
@@ -170,6 +172,8 @@ body {
     border: none;
     border: 2px solid rgb(44, 44, 44);
     border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     font-size: 1.3em;
     font-weight: 900;
