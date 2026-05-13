@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 /* Body */
@@ -15,6 +16,78 @@ body {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HomePage Header */
+/* HomePage NavBar */
+#homepageNavBar {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 2px solid rgb(30, 30, 30);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* HomePage Quizora Logo -> 1 & 2 */
+#homepageQuizoraLogo1 , #homepageQuizoraLogo2 {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+/* HomePage Quizora Logo -> 1 */
+#homepageQuizoraLogo1 {
+    color: rgb(245, 245, 245);
+}
+
+/* HomePage Quizora Logo -> 2 */
+#homepageQuizoraLogo2 {
+    color: rgb(206, 145, 89);
+}
+
+/* HomePage Navbar Options Container */
+#homepageNavbarOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+/* HomePage Navbar Options */
+.homepageNavbarOptions {
+    color: rgb(162, 162, 162);
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.homepageNavbarOptions:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Active */
+.homepageNavbarOptions:active {
+    opacity: 0.7;
+}
+
+/* HomePage Main */
+#homepageMain {
+    background-color: inherit;
+
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -22,7 +95,7 @@ body {
 /* HomePage Heading */
 #homepageHeading1 , #homepageHeading2 , #homepageHeading3 {
     font-size: 4em;
-    color: rgb(245, 245, 245);
+    text-align: center;
 }
 
 #homepageHeading1 , #homepageHeading2 {
@@ -42,6 +115,7 @@ body {
 
     font-size: 1.1em;
     text-align: center;
+    text-align: center;
 }
 
 /* HomePage Btns Container */
@@ -50,9 +124,10 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
+    flex-wrap: wrap;
+    gap: 20px 60px;;
 }
 
 /* HomePage Start Quize Btn */
@@ -107,4 +182,30 @@ body {
 /* Active */
 #homepageExploreCategoriesBtn:active {
     transform: scale(0.97);
+}
+
+/* HomePage Footer */
+#homepageFooter {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40px 20px 40px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+}
+
+/* Footer Items Head */
+.footerItemsHead {
+    font-size: 3em;
+    font-weight: 900;
+    color: rgb(206, 145, 89);
+}
+
+.footerItemsHeadFooter {
+    color: rgb(163, 163, 163);
+    font-size: 1.3em;
 }
