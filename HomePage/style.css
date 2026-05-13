@@ -1,0 +1,110 @@
+/* Homepage styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-color: rgb(15, 15, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HomePage Heading */
+#homepageHeading1 , #homepageHeading2 , #homepageHeading3 {
+    font-size: 4em;
+    color: rgb(245, 245, 245);
+}
+
+#homepageHeading1 , #homepageHeading2 {
+    color: rgb(245, 245, 245);
+}
+
+#homepageHeading3 {
+    color: rgb(206, 145, 89);
+}
+
+/* HomePage Intro Text */
+#homepageIntroText {
+    max-width: 60vw;
+    margin-top: 30px;
+
+    color: rgb(163, 163, 163);
+
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* HomePage Btns Container */
+#homepageBtnsContainer {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* HomePage Start Quize Btn */
+#homepageStartQuizeBtn {
+    background-color: rgb(206, 145, 89);
+    color: rgb(255, 255, 255);
+
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 15px;
+
+    font-size: 1.3em;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+#homepageStartQuizeBtn:hover {
+    background-color: rgb(221, 160, 103);
+}
+
+/* Active */
+#homepageStartQuizeBtn:active {
+    transform: scale(0.97);
+}
+
+/* HomePage Explore Categories Btn */
+#homepageExploreCategoriesBtn {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 15px;
+
+    font-size: 1.3em;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+#homepageExploreCategoriesBtn:hover {
+    background-color: rgb(25, 25, 25);
+    border-color: rgb(70, 70, 70);
+}
+
+/* Active */
+#homepageExploreCategoriesBtn:active {
+    transform: scale(0.97);
+}
