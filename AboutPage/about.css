@@ -89,6 +89,7 @@ body {
 
 /* About Page Heading -> 1 */
 #aboutPageHeading1 {
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 
@@ -98,6 +99,7 @@ body {
 
 /* About Page Intro Paragraph -> 1 */
 #aboutPageIntroParagraph1 {
+    margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
 
@@ -207,10 +209,11 @@ body {
 
 /* About Page Heading -> 2 */
 #aboutPageHeading2 {
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 900;
 
     color: rgb(245, 245, 245)
@@ -225,6 +228,298 @@ body {
 
     font-size: 1.1em;
     text-align: center;
-    
+
     max-width: 60vw;
+}
+
+/* About Page Features Card Container */
+#aboutPageFeaturesCardContainer {
+    width: 100vw;
+    
+    margin-top: 100px;
+
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1083px) {
+    #aboutPageFeaturesCardContainer {
+        grid-template-rows: repeat(2 , auto);
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media (max-width: 792px) {
+    #aboutPageFeaturesCardContainer {
+        grid-template-rows: repeat(2 , auto);
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    #aboutPageFeaturesCardContainer {
+        grid-template-rows: repeat(4 , auto);
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+/* About Page Features Card Container Itmes */
+.aboutPageFeaturesCardContainerItmes {
+    background: #181818;
+
+    border: 1px solid #262626;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+
+    transition: all 0.2s ease;
+}
+
+.aboutPageFeaturesCardContainerItmes:hover {
+
+    transform:translateY(-6px);
+    border-color:#383838;
+
+}
+
+/* About Page Features Card Container Itmes Icons */
+.aboutPageFeaturesCardContainerItmesIcons {
+
+    background: #232323;
+
+    font-size: 3em;
+
+    padding: 10px;
+    border-radius: 25%;
+}
+
+/* About Page Features Card Container Itmes Headings */
+.aboutPageFeaturesCardContainerItmesHeadings {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    color: white;
+}
+
+/* About Page Features Card Container Itmes Descriptions */
+.aboutPageFeaturesCardContainerItmesDescriptions {
+    text-align: left;
+
+    color: #9a9a9a;
+}
+
+/* About Page Heading -> 3 */
+#aboutPageHeading3 {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 3.5em;
+    font-weight: 900;
+    color: rgb(245, 245, 245);
+}
+
+/* About Page Intro Paragraph -> 3 */
+#aboutPageIntroParagraph3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(163, 163, 163);
+    font-size: 1.1em;
+    max-width: 60vw;
+}
+
+/* About Page Steps Card Container */
+#aboutPageStepsCardContainer {
+    width: 100vw;
+    
+    margin-top: 100px;
+
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: grid;
+    grid-template-rows: repeat(2 , auto);
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1083px) {
+    #aboutPageStepsCardContainer {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media (max-width: 792px) {
+    #aboutPageStepsCardContainer {
+        grid-template-rows: repeat(3 , auto);
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    #aboutPageStepsCardContainer {
+        grid-template-rows: repeat(5 , auto);
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+/* About Page Steps Card Container Itmes */
+.aboutPageStepsCardContainerItmes {
+    background: #181818;
+
+    border: 1px solid #262626;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    transition: all 0.2s ease;
+}
+
+.aboutPageStepsCardContainerItmes:hover {
+
+    transform:translateY(-6px);
+    border-color:#383838;
+
+}
+
+/* About Page Steps Card Container Itmes SrNos */
+.aboutPageStepsCardContainerItmesSrNos {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background: #e68a3f;
+    color: white;
+
+    font-size: 1.5em;
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Page Steps Card Container Itmes Headings */
+.aboutPageStepsCardContainerItmesHeadings {
+    font-size: 1.5em;
+    font-weight: 900;
+
+    color: white;
+}
+
+/* About Page Steps Card Container Itmes Descriptions */
+.aboutPageStepsCardContainerItmesDescriptions {
+    color: #9a9a9a;
+}
+
+/* About Page Heading -> 4 */
+#aboutPageHeading4 {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 3.5em;
+    font-weight: 900;
+    color: rgb(245, 245, 245);
+}
+
+/* About Page Intro Paragraph -> 4 */
+#aboutPageIntroParagraph4 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(163, 163, 163);
+    font-size: 1.1em;
+    max-width: 60vw;
+}
+
+/* HomePage Footer */
+#homepageFooter {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40px 20px 40px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+}
+
+/* Footer Items Head */
+.footerItemsHead {
+    font-size: 3em;
+    font-weight: 900;
+    color: rgb(206, 145, 89);
+}
+
+.footerItemsHeadFooter {
+    color: rgb(163, 163, 163);
+    font-size: 1.3em;
+}
+
+/* About Page Heading -> 5 */
+#aboutPageHeading5 {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 3.5em;
+    font-weight: 900;
+    color: rgb(245, 245, 245);
+}
+
+/* About Page Heading -> 6 */
+#aboutPageHeading6 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 80vw;
+
+    font-size: 2em;
+    font-weight: 900;
+    color: rgb(245, 245, 245);
+}
+
+/* About Page Intro Paragraph -> 5 */
+#aboutPageIntroParagraph5 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+
+    color: rgb(163, 163, 163);
+    font-size: 1.1em;
+    max-width: 60vw;
+}
+
+/* About Page Copy Right Text */
+#aboutPageCopyRightText {
+    width: 100vw;
+    border-top: 2px solid #1f1f1f;
+    box-sizing: border-box;
+    padding: 30px;
+
+    color: #6f6f6f;
 }
