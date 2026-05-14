@@ -7,11 +7,6 @@
     text-align: center;
 }
 
-/* Use Js To Add this dynamically when this page is injected */
-/* html {
-       scrollbar-gutter: stable;
-}*/
-
 body {
     min-height: 100vh;
     width: 100vw;
@@ -288,6 +283,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
+    z-index: 1;
 
     transition: all 0.2s ease;
 }

@@ -1,1 +1,39 @@
-/* Homepage functionality */
+/* Homepage Main JS File, here all the final execution , function calling etc happens */
+
+import * as DOM from "./dom.js";
+import * as fun from "./function.js";
+
+// Executing updateScrollBarGutter() once before any thing to set the scrollbar-gutter property of the home page since different divices have different dimensions , making scrollbar-gutter property different for different divices
+fun.updateScrollBarGutter();
+
+// This executes updateScrollBarGutter() function , every time any slight diminsion occurs in body & changes the scrollbar-gutter property , for more stable layout
+const observer = new ResizeObserver (() => {
+    fun.updateScrollBarGutter();
+});
+
+// Setting observer for <html> element
+observer.observe(document.documentElement);
+
+// This event listener injects the Home Page On Clicking the home section in the navbar
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageNavbarOption1"){
+
+        DOM.body.innerHTML = await fun.fetchHomePage();
+
+    }
+
+});
+
+// This event listener injects the About Page On Clicking the about section in the navbar
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageNavbarOption3"){
+
+        DOM.body.innerHTML = await fun.fetchAboutPage();
+        console.log("Click !!");
+
+    }
+
+});
+
