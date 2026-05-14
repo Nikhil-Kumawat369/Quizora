@@ -1,0 +1,230 @@
+/* Aboutpage Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(15, 15, 15);
+}
+
+/* About Page Body */
+#aboutPageBody {
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(15, 15, 15);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HomePage Header */
+/* HomePage NavBar */
+#homepageNavBar {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 2px solid rgb(30, 30, 30);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* HomePage Quizora Logo -> 1 & 2 */
+#homepageQuizoraLogo1 , #homepageQuizoraLogo2 {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+/* HomePage Quizora Logo -> 1 */
+#homepageQuizoraLogo1 {
+    color: rgb(245, 245, 245);
+}
+
+/* HomePage Quizora Logo -> 2 */
+#homepageQuizoraLogo2 {
+    color: rgb(206, 145, 89);
+}
+
+/* HomePage Navbar Options Container */
+#homepageNavbarOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+/* HomePage Navbar Options */
+.homepageNavbarOptions {
+    color: rgb(162, 162, 162);
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.homepageNavbarOptions:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Active */
+.homepageNavbarOptions:active {
+    opacity: 0.7;
+}
+
+/* About Page Heading -> 1 */
+#aboutPageHeading1 {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 4em;
+    font-weight: 900;
+}
+
+/* About Page Intro Paragraph -> 1 */
+#aboutPageIntroParagraph1 {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    color: rgb(163, 163, 163);
+
+    font-size: 1.1em;
+    text-align: center;
+
+    max-width: 60vw;
+}
+
+/* HomePage Btns Container */
+#homepageBtnsContainer {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* HomePage Start Quize Btn */
+#homepageStartQuizeBtn {
+    background-color: rgb(206, 145, 89);
+    color: rgb(255, 255, 255);
+
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 1.3em;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+#homepageStartQuizeBtn:hover {
+    background-color: rgb(221, 160, 103);
+}
+
+/* Active */
+#homepageStartQuizeBtn:active {
+    transform: scale(0.97);
+}
+
+/* HomePage Explore Categories Btn */
+#homepageExploreCategoriesBtn {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 1.3em;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+#homepageExploreCategoriesBtn:hover {
+    background-color: rgb(25, 25, 25);
+    border-color: rgb(70, 70, 70);
+}
+
+/* Active */
+#homepageExploreCategoriesBtn:active {
+    transform: scale(0.97);
+}
+
+/* HomePage Footer */
+#homepageFooter {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40px 20px 40px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+}
+
+/* Footer Items Head */
+.footerItemsHead {
+    font-size: 3em;
+    font-weight: 900;
+    color: rgb(206, 145, 89);
+}
+
+.footerItemsHeadFooter {
+    color: rgb(163, 163, 163);
+    font-size: 1.3em;
+}
+
+/* About Page Heading -> 2 */
+#aboutPageHeading2 {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 4em;
+    font-weight: 900;
+
+    color: rgb(245, 245, 245)
+}
+
+/* About Page Intro Paragraph -> 2 */
+#aboutPageIntroParagraph2 {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    color: rgb(163, 163, 163);
+
+    font-size: 1.1em;
+    text-align: center;
+    
+    max-width: 60vw;
+}
