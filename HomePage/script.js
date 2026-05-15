@@ -57,3 +57,14 @@ DOM.body.addEventListener("click" , async (e) => {
     }
 
 });
+
+// This event listener injects the Home Page On Clicking the Home Btn in Categories Selection Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "CategoriesSelectionPageHomeBtn"){
+
+        DOM.body.innerHTML = await fun.fetchHomePage();
+
+    }
+
+});
