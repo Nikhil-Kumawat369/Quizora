@@ -42,9 +42,18 @@ DOM.body.addEventListener("click" , async (e) => {
     if(e.target.id === "homepageNavbarOption3"){
 
         DOM.body.innerHTML = await fun.fetchAboutPage();
-        console.log("Click !!");
 
     }
 
 });
 
+// This event listener injects the Categories Selection Page On Clicking the Explore Categories Btn in Home Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageExploreCategoriesBtn"){
+
+        DOM.body.innerHTML = await fun.fetchCategoriesSectionPage();
+
+    }
+
+});

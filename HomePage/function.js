@@ -60,3 +60,20 @@ export async function fetchAboutPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of Categories Selection Page
+export async function fetchCategoriesSectionPage () {
+
+    let response = await fetch("../CategoriesSelectionPage/CategoriesSelectionPage.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
