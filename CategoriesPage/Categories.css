@@ -1,0 +1,222 @@
+/* Categories Page Style */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Categories Page Body */
+#CategoriespageBody {
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(15, 15, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HomePage Header */
+/* HomePage NavBar */
+#homepageNavBar {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 2px solid rgb(30, 30, 30);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* HomePage Quizora Logo -> 1 & 2 */
+#homepageQuizoraLogo1 , #homepageQuizoraLogo2 {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+/* HomePage Quizora Logo -> 1 */
+#homepageQuizoraLogo1 {
+    color: rgb(245, 245, 245);
+}
+
+/* HomePage Quizora Logo -> 2 */
+#homepageQuizoraLogo2 {
+    color: rgb(206, 145, 89);
+}
+
+/* HomePage Navbar Options Container */
+#homepageNavbarOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+/* HomePage Navbar Options */
+.homepageNavbarOptions {
+    color: rgb(162, 162, 162);
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.homepageNavbarOptions:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Active */
+.homepageNavbarOptions:active {
+    opacity: 0.7;
+}
+
+/* Categories Page Heading -> 1 */
+#CategoriesPageHeading1 {
+    font-size: 3.5em;
+    font-weight: 900;
+
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 373px){
+
+    #CategoriesPageHeading1 {
+
+        font-size: 3.2em;
+
+    }
+
+}
+
+@media (max-width: 346px){
+
+    #CategoriesPageHeading1 {
+
+        font-size: 3em;
+
+    }
+
+}
+
+@media (max-width: 321px){
+
+    #CategoriesPageHeading1 {
+
+        font-size: 2.8em;
+
+    }
+
+}
+
+/* Categories Page Paragraph -> 1 */
+#CategoriesPageParagraph1 {
+    font-size: 1.1em;
+    
+    color: #9a9a9a;
+
+    max-width: 70vw;
+    margin-top: 30px;
+}
+
+/* Categories Page Card Conatiner */
+#CategoriesPageCardConatiner {
+    width: 100vw;
+
+    margin-top: 100px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: grid;
+    grid-template-rows: repeat(7 , auto);
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1083px) {
+    #CategoriesPageCardConatiner {
+        grid-template-rows: repeat(9 , auto);
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media (max-width: 792px) {
+    #CategoriesPageCardConatiner {
+        grid-template-rows: repeat(13 , auto);
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    #CategoriesPageCardConatiner {
+        grid-template-rows: repeat(25 , auto);
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+/* Categories Page Card Conatiner Items */
+.CategoriesPageCardConatinerItems {
+
+    background-color: #181818;
+    border: 1px solid #262626;
+    border-radius: 25px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.CategoriesPageCardConatinerItems:hover {
+    
+    transform: translateY(-6px);
+    border-color: #3a3a3a;
+
+}
+
+/* Categories Page Card Conatiner Logo */
+.CategoriesPageCardConatinerLogo {
+    background: #232323;
+    font-size: 3em;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+/* Categories Page Card Conatiner Heading */
+.CategoriesPageCardConatinerHeading {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    color: white;
+}
+
+/* Categories Page Card Conatiner Paragraph */
+.CategoriesPageCardConatinerParagraph {
+    text-align: left;
+
+    color: #9a9a9a;
+}
