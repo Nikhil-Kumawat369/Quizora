@@ -99,6 +99,8 @@ body {
 
 /* HomePage Heading */
 #homepageHeading1 , #homepageHeading2 , #homepageHeading3 {
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 4em;
     text-align: center;
 }
