@@ -28,6 +28,22 @@ export async function fetchHomePage () {
 
 }
 
+// This Function fetches &  return the innerHtml of Categories Page
+export async function fetchCategoriesPage () {
+
+    let response = await fetch("../CategoriesPage/Categories.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+}
+
 // This Function fetches &  return the innerHtml of About Page
 export async function fetchAboutPage () {
 

@@ -25,6 +25,17 @@ DOM.body.addEventListener("click" , async (e) => {
 
 });
 
+// This event listener injects the Categories Page On Clicking the home section in the navbar
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageNavbarOption2"){
+
+        DOM.body.innerHTML = await fun.fetchCategoriesPage();
+
+    }
+
+});
+
 // This event listener injects the About Page On Clicking the about section in the navbar
 DOM.body.addEventListener("click" , async (e) => {
 
