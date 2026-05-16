@@ -77,3 +77,20 @@ export async function fetchCategoriesSectionPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of Format Selection Page
+export async function fetchFormatSelectionPage () {
+
+    let response = await fetch("../FormatSelectionPage/FormatSelectionPage.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}

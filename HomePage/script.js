@@ -68,3 +68,14 @@ DOM.body.addEventListener("click" , async (e) => {
     }
 
 });
+
+// This event listener injects the Format Selection Page On Clicking the Start Quiz Btn on Home Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageStartQuizeBtn"){
+
+        DOM.body.innerHTML = await fun.fetchFormatSelectionPage();
+
+    }
+
+});
