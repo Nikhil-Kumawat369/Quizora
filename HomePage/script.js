@@ -70,9 +70,10 @@ DOM.body.addEventListener("click" , async (e) => {
 });
 
 // This event listener injects the Format Selection Page On Clicking the Start Quiz Btn on Home Page
+// This event listener injects the Format Selection Page On Clicking the Play Btn on Categories Selection Page
 DOM.body.addEventListener("click" , async (e) => {
 
-    if(e.target.id === "homepageStartQuizeBtn"){
+    if(e.target.id === "homepageStartQuizeBtn" || e.target.classList.contains("CategoriesPageCardConatinerPlayBtn")){
 
         DOM.body.innerHTML = await fun.fetchFormatSelectionPage();
 
