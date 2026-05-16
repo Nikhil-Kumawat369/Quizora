@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Format Selection Page Body */
+#FormatSelectionPageBody {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 25px;
+
+    background-color: rgb(15, 15, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Categories Selection Page Home Btn */
+#CategoriesSelectionPageHomeBtn {
+    align-self: flex-start;
+
+    margin-left: 30px;
+    border: none;
+    border: 1px solid #2d2d2d;
+    border-radius: 14px;
+    padding: 12px 18px;
+
+    font-size: 1em;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background-color: #181818;
+    color: white;
+
+    transition: all 0.2s ease;
+}
+
+#CategoriesSelectionPageHomeBtn:hover {
+    transform: translateY(-2px);
+
+    background-color: #232323;
+    border-color: #3a3a3a; 
+}
+
+#CategoriesSelectionPageHomeBtn:active {
+    transform: scale(0.96);
+}
+
+/* Format Selection Page Heading -> 1 */
+#FormatSelectionPageHeading1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    font-size: 3.5em;
+    font-weight: 900;
+
+    color: #e68a3f;
+}
+
+/* Format Selection Page Paragraph -> 1 */
+#FormatSelectionPageParagraph1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 70vw;
+
+    color: #8d8d8d;
+
+    font-size: 1.1em;
+}
+
+/* Format Selection Page Format Option Container */
+#FormatSelectionPageFormatOptionContainer {
+    width: 80vw;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    display: grid;
+    grid-template-rows: repeat(1 , auto);
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 1172px) {
+
+    #FormatSelectionPageFormatOptionContainer {
+
+        grid-template-rows: repeat(2 , auto);
+        grid-template-columns: repeat(2 , 1fr);
+
+    }
+
+}
+
+@media (max-width: 666px) {
+
+    #FormatSelectionPageFormatOptionContainer {
+
+        grid-template-rows: repeat(3 , auto);
+        grid-template-columns: repeat(1 , 1fr);
+
+    }
+
+}
+
+/* Format Selection Page Format Option Container Items */
+.FormatSelectionPageFormatOptionContainerItems {
+
+    background-color: #181818;
+    border: 1px solid #262626;
+    border-radius: 25px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+
+    position: relative;
+    overflow-x: hidden;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.FormatSelectionPageFormatOptionContainerItems::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 4px;
+    background-color: #e68a3f;
+}
+
+.FormatSelectionPageFormatOptionContainerItems:hover {
+
+    transform: translateY(-6px);
+    border-color: #3a3a3a;
+
+}
+
+.FormatSelectionPageFormatOptionContainerItems:active {
+
+    transform: scale(0.98);
+
+}
+
+/* Format Selection Page Format Option Container Logo */
+.FormatSelectionPageFormatOptionContainerLogo {
+    background: #232323;
+    font-size: 3em;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+#AnyFormat {
+    border: 1px dashed #e68a3f;
+}
+
+/* Format Selection Page Format Option Container Heading */
+.FormatSelectionPageFormatOptionContainerHeading {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 900;
+
+    color: white;
+}
+
+/* Format Selection Page Format Option Container Paragraph */
+.FormatSelectionPageFormatOptionContainerParagraph {
+    text-align: left;
+
+    color: #9a9a9a;
+}
+
+/* Format Selection Page Format One Word Summary */
+.FormatSelectionPageFormatOneWordSummary {
+    font-size: 0.7em;
+
+    background: #232323;
+    color: #cfcfcf;
+
+    border: 1px solid #323232;
+    border-radius: 20px / 50%;
+    padding: 10px 16px;
+    margin-top: auto;
+}
+
+/* If The Option Is selected the the following CSS Should be applyed via JS instantinously */
+
+/* Items CSS */
+.selectItem {
+    border-color: #e68a3f;
+    background-color: #1d1a17;
+
+    box-shadow: 
+        0 0 0 1px rgba(230,138,63,0.4),
+        0 0 30px rgba(230,138,63,0.15);
+}
+
+/* Icons CSS */
+.selectIcon {
+    background-color: #2b241d;
+}
+
+/* Tags CSS */
+.selectTag {
+    border-color: #e68a3f;
+}
+
+/* Format Selection Page Continue Btn */
+#FormatSelectionPageContinueBtn {
+    border: none;
+    padding: 18px 34px;
+    border-radius: 18px;
+    margin-bottom: 100px;
+
+    background-color: #e68a3f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+#FormatSelectionPageContinueBtn:hover {
+    transform:translateY(-2px);
+
+    background:#f39a4f;
+}
+
+#FormatSelectionPageContinueBtn:active {
+    transform: scale(0.97);
+}

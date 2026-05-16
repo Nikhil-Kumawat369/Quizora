@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Format Selectio Page</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="FormatSelectionPage.css">
+
+    <!-- Linking JS File -->
+    <script defer type="module" src="FormatSelectionPage.js"></script>
+
+</head>
+
+<body>
+
+    <div id="FormatSelectionPageBody">
+
+        <button id="CategoriesSelectionPageHomeBtn">← Home</button>
+
+        <h1 id="FormatSelectionPageHeading1">Choose Quiz Format</h1>
+
+        <p id="FormatSelectionPageParagraph1">Select the style of questions you want before starting your quiz experience.</p>
+
+        <div id="FormatSelectionPageFormatOptionContainer">
+
+            <!-- Multiple Choice -->
+            <div class="FormatSelectionPageFormatOptionContainerItems">
+
+                <span class="FormatSelectionPageFormatOptionContainerLogo">📝</span>
+
+                <h1 class="FormatSelectionPageFormatOptionContainerHeading">Multiple Choice</h1>
+
+                <p class="FormatSelectionPageFormatOptionContainerParagraph" style="font-size: 0.9em;">Select the correct answer from multiple possible options and test your accuracy.</p>
+
+                <span class="FormatSelectionPageFormatOneWordSummary">Most Popular</span>
+
+            </div>
+
+            <!-- True / False -->
+            <div class="FormatSelectionPageFormatOptionContainerItems">
+
+                <span class="FormatSelectionPageFormatOptionContainerLogo">⚡</span>
+
+                <h1 class="FormatSelectionPageFormatOptionContainerHeading">True / False</h1>
+
+                <p class="FormatSelectionPageFormatOptionContainerParagraph" style="font-size: 0.9em;">Quickly decide whether each statement is true or false in a fast-paced format.</p>
+
+                <span class="FormatSelectionPageFormatOneWordSummary">Fast & Simple</span>
+
+            </div>
+
+            <!-- Any Format -->
+            <div id="AnyFormat" class="FormatSelectionPageFormatOptionContainerItems">
+
+                <span class="FormatSelectionPageFormatOptionContainerLogo">🎲</span>
+
+                <h1 class="FormatSelectionPageFormatOptionContainerHeading">Any Format</h1>
+
+                <p class="FormatSelectionPageFormatOptionContainerParagraph" style="font-size: 0.9em;">Mix different question styles together for a more random and varied challenge.</p>
+
+                <span class="FormatSelectionPageFormatOneWordSummary">Random Experience</span>
+
+            </div>
+
+        </div>
+
+        <button id="FormatSelectionPageContinueBtn">Continue</button>
+
+    </div>
+    
+</body>
+
+</html>
