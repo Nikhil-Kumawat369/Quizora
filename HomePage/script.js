@@ -70,12 +70,41 @@ DOM.body.addEventListener("click" , async (e) => {
 });
 
 // This event listener injects the Format Selection Page On Clicking the Start Quiz Btn on Home Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "homepageStartQuizeBtn"){
+
+        DOM.body.innerHTML = await fun.fetchFormatSelectionPage();
+
+    }
+
+});
+
 // This event listener injects the Format Selection Page On Clicking the Play Btn on Categories Selection Page
 DOM.body.addEventListener("click" , async (e) => {
 
-    if(e.target.id === "homepageStartQuizeBtn" || e.target.classList.contains("CategoriesPageCardConatinerPlayBtn")){
+    if(e.target.classList.contains("CategoriesPageCardConatinerPlayBtn")){
 
         DOM.body.innerHTML = await fun.fetchFormatSelectionPage();
+
+        // Now the Home Btn is wrong here , so changing it to Catogeries Btn
+        let homeBtn = DOM.body.querySelector("#CategoriesSelectionPageHomeBtn");
+        let categoriesBtn = document.createElement("button");
+        categoriesBtn.id = "CategoriesSelectionPageCategoriesBtn";
+        categoriesBtn.innerText = "← Categories";
+
+        homeBtn.replaceWith(categoriesBtn);
+
+    }
+
+});
+
+// This event listener injects the Categories Selection Page On Clicking the Categories Btn on Format Selection Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "CategoriesSelectionPageCategoriesBtn"){
+
+        DOM.body.innerHTML = await fun.fetchCategoriesSectionPage();
 
     }
 

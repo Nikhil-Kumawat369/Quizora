@@ -25,7 +25,7 @@ body {
 }
 
 /* Categories Selection Page Home Btn */
-#CategoriesSelectionPageHomeBtn {
+#CategoriesSelectionPageHomeBtn , #CategoriesSelectionPageCategoriesBtn {
     align-self: flex-start;
 
     margin-left: 30px;
@@ -53,6 +53,17 @@ body {
 }
 
 #CategoriesSelectionPageHomeBtn:active {
+    transform: scale(0.96);
+}
+
+#CategoriesSelectionPageCategoriesBtn:hover {
+    transform: translateY(-2px);
+
+    background-color: #232323;
+    border-color: #3a3a3a; 
+}
+
+#CategoriesSelectionPageCategoriesBtn:active {
     transform: scale(0.96);
 }
 
