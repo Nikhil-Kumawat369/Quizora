@@ -157,3 +157,25 @@ DOM.body.addEventListener("click" , async (e) => {
     }
 
 });
+
+// This event listener injects the Quiz Question Count Selection Page On Clicking the Continue Btn on Difficulty Selection Page 
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "DifficultySelectionPageContinueBtn") {
+
+        DOM.body.innerHTML = await fun.fetchQuizQuestionCountSelectionPage();
+
+    }
+
+});
+
+// This event listener injects the Difficulty Selection Page  On Clicking the Difficulty Btn on Quiz Question Count Selection Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "QuizCountSelectionPageDifficultyBtn") {
+
+        DOM.body.innerHTML = await fun.fetchDifficultySelectionPage();
+
+    }
+
+});

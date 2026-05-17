@@ -111,3 +111,20 @@ export async function fetchDifficultySelectionPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of Quiz Question Count Selection Page
+export async function fetchQuizQuestionCountSelectionPage () {
+
+    let response = await fetch("../QuizCountSelectionPage/QuizCountSelectionPage.html");
+
+    let htmltext = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmltext , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
