@@ -128,3 +128,20 @@ export async function fetchQuizQuestionCountSelectionPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of Start Quiz Page
+export async function fetchStartQuizPage () {
+
+    let response = await fetch("../StartQuizPage/StartQuizPage.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}

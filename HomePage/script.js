@@ -179,3 +179,25 @@ DOM.body.addEventListener("click" , async (e) => {
     }
 
 });
+
+// This event listener injects the Start Quiz Page On Clicking the Continue Btn on Quiz Question Count Selection Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "QuizCountSelectionPageContinueBtn") {
+
+        DOM.body.innerHTML = await fun.fetchStartQuizPage();
+
+    }
+
+});
+
+// This event listener injects the Quiz Question Count Selection Page On Clicking the Question Count Btn on Start Quiz Page
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "StartQuizPageQuestionCountBtn") {
+
+        DOM.body.innerHTML = await fun.fetchQuizQuestionCountSelectionPage();
+
+    }
+
+});
