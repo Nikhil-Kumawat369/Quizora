@@ -94,3 +94,20 @@ export async function fetchFormatSelectionPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of Difficulty Selection Page
+export async function fetchDifficultySelectionPage () {
+
+    let response = await fetch("../DifficultySelectionPage/DifficultySelectionPage.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
