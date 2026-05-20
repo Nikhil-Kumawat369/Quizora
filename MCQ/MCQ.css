@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* MCQ Body */
+#MCQBody {
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: #0f0f0f;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* MCQ Head */
+#MCQHead {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 30px;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* MCQ Exit Quiz Btn */
+#MCQExitQuizBtn {
+
+    border: none;
+    border: 1px solid #2d2d2d;
+    border-radius: 14px;
+    padding: 12px 18px;
+
+    font-size: 1em;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background-color: #181818;
+    color: white;
+
+    transition: all 0.2s ease;
+}
+
+#MCQExitQuizBtn:hover {
+    transform: translateY(-2px);
+
+    background-color: #232323;
+    border-color: #3a3a3a; 
+}
+
+#MCQExitQuizBtn:active {
+    transform: scale(0.96);
+}
+
+/* MCQ Category */
+#MCQCategory {
+    color: #e68a3f;
+    
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* MCQ Score Board */
+#MCQScoreBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Question Representation Percentage */
+@media (max-width: 394px) {
+
+    #MCQCategory {
+        margin-left: auto !important;
+    }
+
+}
+
+/* options */
+.options {
+    transition: all 0.2s ease 0s;
+}
+
+.options:hover {
+    background:#222 !important;
+    border-color:#e68a3f !important;
+    transform:translateX(5px) !important;
+}
+
+.options:active {
+    transform: scale(0.96) !important;
+}
+
+/* If The Option Is selected the the following CSS Should be applyed via JS instantinously */
+
+/* Items CSS */
+.selectItem {
+    border-color: #e68a3f;
+    background-color: #1d1a17;
+
+    box-shadow: 
+        0 0 0 1px rgba(230,138,63,0.4),
+        0 0 30px rgba(230,138,63,0.15);
+}
+
+/* Tags CSS */
+.selectTag {
+    border: 1px solid #e68a3f !important;
+}
+
+/* Correct Option Select CSS */
+.correctItem {
+    border-color: #22c55e;
+    background-color: #16211b;
+
+    box-shadow:
+        0 0 0 1px rgba(34,197,94,0.35),
+        0 0 30px rgba(34,197,94,0.18);
+}
+
+.correctTag {
+    border: 1px solid #22c55e !important;
+    color: #22c55e !important;
+}
+
+/* In Correct Option Select CSS */
+.wrongItem {
+    border-color: #ef4444;
+    background-color: #211616;
+
+    box-shadow:
+        0 0 0 1px rgba(239,68,68,0.35),
+        0 0 30px rgba(239,68,68,0.18);
+}
+
+.wrongTag {
+    border: 1px solid #ef4444 !important;
+    color: #ef4444 !important;
+}
+
+/* MCQ NextQuiz Btn */
+#MCQNextQuizBtn {
+    transition: all 0.2s ease 0s;
+}
+
+#MCQNextQuizBtn:hover {
+    background: #f39a4f !important;
+    transform: translateY(-2px) !important;
+}
+
+#MCQNextQuizBtn:active {
+    transform: scale(0.96) !important;
+}
+
+/* question */
+@media (max-width: 400px) {
+
+    #question {
+        font-size: 2.5em !important;
+    }
+
+}
