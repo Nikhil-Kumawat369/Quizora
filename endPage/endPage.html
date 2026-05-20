@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>End page</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="endPage.css">
+
+</head>
+
+<body>
+
+    <div id="endPageBody" style="width: 100vw; min-height: 100vh; box-sizing: border-box; padding: 30px; background-color: #0f0f0f; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+
+        <div style="width: 100%; margin-bottom: 60px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+
+            <span style="font-size: 18px; font-weight: 900; letter-spacing: 1px; color: #e68a3f;">QUIZORA</span>
+
+            <div id="endPageFormatDisplay" style="background-color: #181818; color: #d5d5d5; padding: 14px 18px; margin-left: 30px; border: 1px solid #2a2a2a; font-size: 14px; font-weight: 700; border-radius: 20px / 50%;">Multiple Choice Quiz</div>
+
+        </div>
+
+        <p style="align-self: flex-start; font-size: 15px; font-weight: 800; letter-spacing: 1px; color: #e68a3f; margin-bottom: 20px;">QUIZ COMPLETED</p>
+
+        <p id="endPageText1" style="font-size: 5em; font-weight: 900; color: white;">Great Job,<br>You Finished The Quiz!!</p>
+
+        <p style="max-width: 70vw; margin-top: 30px; margin-bottom: 60px; font-size: 17px; line-height: 30px; color: #9d9d9d;">You successfully completed the quiz challenge. Review your performance below and continue improving your score.</p>
+
+        <div id="endPageGrid" style="width: 80%; margin-bottom: 60px; display: grid; grid-template-rows: repeat(1 , auto); grid-template-columns: repeat(4 , 1fr); gap: 30px;">
+
+            <!-- Final Score -->
+            <div style="padding: 28px; border: 1px solid #2b2b2b; border-radius: 30px; background-color: #181818; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px;">
+
+                <p style="text-align: left; font-size: 14px; color: #9d9d9d;">Final Score</p>
+
+                <div id="endPageFinalScore" style="text-align: left; font-size: 42px; font-weight: 900; color: white;">26</div>
+
+            </div>
+
+            <!-- Correct Answers -->
+            <div style="padding: 28px; border: 1px solid #2b2b2b; border-radius: 30px; background-color: #181818; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px;">
+
+                <p style="text-align: left; font-size: 14px; color: #9d9d9d;">Correct Answers</p>
+
+                <div id="endPageCorrectAnswers" style="text-align: left; font-size: 42px; font-weight: 900; color: white;">8</div>
+
+            </div>
+
+            <!-- Wrong Answers -->
+            <div style="padding: 28px; border: 1px solid #2b2b2b; border-radius: 30px; background-color: #181818; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px;">
+
+                <p style="text-align: left; font-size: 14px; color: #9d9d9d;">Wrong Answers</p>
+
+                <div id="endPageWrongAnswers" style="text-align: left; font-size: 42px; font-weight: 900; color: white;">3</div>
+
+            </div>
+
+            <!-- Accuracy -->
+            <div style="padding: 28px; border: 1px solid #2b2b2b; border-radius: 30px; background-color: #181818; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px;">
+
+                <p style="text-align: left; font-size: 14px; color: #9d9d9d;">Accuracy</p>
+
+                <div id="endPageAccuracy" style="text-align: left; font-size: 42px; font-weight: 900; color: white;">72%</div>
+
+            </div>
+
+        </div>
+
+        <div style="padding: 28px; border: 1px solid #2b2b2b; border-radius: 30px; background-color: #181818; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 18px; width: 80%; margin-bottom: 60px;">
+
+            <h1 style="font-size: 28px; font-weight: 800; text-align: left; color: white;">Performance Summary</h1>
+
+            <p id="endPageSummary" style="font-size: 16px; line-height: 25px; text-align: left; max-width: 70%; color: #a2a2a2;">You answered 8 questions correctly and earned a final score of 26 points. Keep practicing different categories and challenge yourself with harder quizzes to improve even further.</p>
+
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; margin-bottom: 70px;">
+
+            <button id="endPagePlayAgainBtn" style="background-color: #e68a3f; color: white; padding: 18px 30px; border: none; border-radius: 22px; font-size: 16px; font-weight: 800; cursor: pointer; transition: all 0.2s ease 0s;">Play Again</button>
+
+            <button id="endPageGoToHomeBtn" style="background-color: #1b1b1b; color: white; padding: 18px 30px; border: 1px solid #2b2b2b; border-radius: 22px; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.2s ease 0s;">Go To Home</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
