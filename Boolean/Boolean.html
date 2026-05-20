@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>MCQ</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="Boolean.css">
+
+    <!-- Linking JS File -->
+    <script defer type="module" src="Boolean.js"></script>
+
+</head>
+
+<body>
+
+    <div id="MCQBody">
+
+        <!-- MCQ Head -->
+        <div id="MCQHead">
+
+            <button id="MCQExitQuizBtn">← Exit Quiz</button>
+
+            <!-- Multiple Choice Quiz || True / False Quiz || Mixed Type Quiz -->
+            <span id="MCQCategory">Multiple Choice Quiz</span>
+
+            <div id="MCQScoreBoard" style="border: 1px solid #2d2d2d; border-radius: 14px; background-color: #181818; padding: 18px 57px; margin-left: auto;">
+
+                <span style="color: #9d9d9d; font-size: 13px;">Current Score</span>
+
+                <span id="score" style="font-size: 34px; font-weight: 900; color: white;">14</span>
+
+            </div>
+
+        </div>
+
+        <!-- Progress Section -->
+
+        <!-- Progress Section Head -->
+        <div id="progressBarHead" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100vw; box-sizing: border-box; padding-left: 30px; padding-right: 30px;">
+
+            <span id="questionRepresentationNumber" style="font-size: 16px; font-weight: 700; color: #d8d8d8;">Question 5 of 10</span>
+
+            <span id="questionRepresentationPercentage" style="font-size: 15px; font-weight: 800; color: #e68a3f; margin-left: 15px;">50% Completed</span>
+
+        </div>
+
+        <!-- Actuall Progress Bar -->
+        <div id="progressBarContainer" style="box-sizing: border-box; margin-top: 10px; height: 12px; width: calc(100vw - 60px); border-radius: 5px / 50%; background-color: #252525; display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
+
+            <div id="pregressBarContent" style="height: 12px; width: 50%; border-radius: 5px / 50%; background-color: #e68a3f;"></div>
+
+        </div>
+
+        <!-- Score Calc Rules -->
+        <div style="box-sizing: border-box; margin-top: 10px; padding-left: 30px; padding-right: 30px; width: 100vw; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 10px;">
+
+            <span style="border: 1px solid #2d2d2d; border-radius: 20px / 50%; padding: 12px 18px; background-color: #181818; color: #cfcfcf;">+4 Correct Answer</span>
+
+            <span style="border: 1px solid #2d2d2d; border-radius: 20px / 50%; padding: 12px 18px; background-color: #181818; color: #cfcfcf;">-2 Wrong Answer</span>
+
+        </div>
+
+        <!-- Category Display -->
+        <div id="MCQCategoriesDisplay" style="align-self: flex-start; text-transform: uppercase; font-weight: 900; font-size: 14px; color: #e68a3f; margin-left: 30px; margin-top: 50px; margin-bottom: 30px;">Geography</div>
+
+        <!-- Question Display -->
+        <p id="question" style="font-size: 3em; font-weight: 900; color: white; max-width: calc(100vw - 60px);">Which country has the largest population in the world?</p>
+
+        <!-- Option 1 -->
+        <div id="option1" class="options" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 30px; box-sizing: border-box; padding: 30px; width: calc(100vw - 60px); background-color: #1a1a1a; border: 1px solid #2b2b2b; cursor: pointer; border-radius: 15px; margin-top: 50px;">
+
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; font-weight: 900; font-size: 18px; background-color: #262626; color: #e68a3f; padding: 20px; border-radius: 15px;">A</div>
+
+            <div style="font-size: 19px; font-weight: 600; color: #f2f2f2;">True</div>
+
+        </div>
+
+        <!-- Option 2 -->
+        <div id="option2" class="options" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 30px; box-sizing: border-box; padding: 30px; width: calc(100vw - 60px); background-color: #1a1a1a; border: 1px solid #2b2b2b; cursor: pointer; border-radius: 15px; margin-top: 10px;">
+
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; font-weight: 900; font-size: 18px; background-color: #262626; color: #e68a3f; padding: 20px; border-radius: 15px;">B</div>
+
+            <div style="font-size: 19px; font-weight: 600; color: #f2f2f2;">False</div>
+
+        </div>
+
+        <!-- Next Question Btn -->
+        <button id="MCQNextQuizBtn" style="border: none; background-color: #e68a3f; color: white; padding: 18px 32px; border-radius: 20px; cursor: pointer; font-size: 16px; font-weight: 800; margin-top: 30px; margin-bottom: 50px;">Next Quiz</button>
+
+    </div>
+    
+</body>
+
+</html>
