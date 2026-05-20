@@ -145,3 +145,54 @@ export async function fetchStartQuizPage () {
     return bodyInnerHtml;
 
 }
+
+// This Function fetches &  return the innerHtml of MCQ Quiz Page
+export async function fetchMCQQizPage () {
+
+    let response = await fetch("../MCQ/MCQ.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
+
+// This Function fetches &  return the innerHtml of Boolean Quiz Page
+export async function fetchBooleanQizPage () {
+
+    let response = await fetch("../Boolean/Boolean.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
+
+// This Function fetches &  return the innerHtml of end Page Page
+export async function fetchEndPage () {
+
+    let response = await fetch("../endPage/endPage.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
