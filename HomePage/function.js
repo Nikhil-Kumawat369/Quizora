@@ -199,6 +199,23 @@ export async function fetchEndPage () {
 
 }
 
+// This function fetches loading screen
+export async function fetchLoadingScreen () {
+
+    let response = await fetch("../loadingScreen/loadingScreen.html");
+
+    let htmlText = await response.text();
+
+    let parser = new DOMParser ();
+
+    let doc = parser.parseFromString(htmlText , "text/html");
+
+    let bodyInnerHtml = doc.body.innerHTML;
+
+    return bodyInnerHtml;
+
+}
+
 // This function fetches & returns the quiz data
 export async function fetchQuizData () {
 

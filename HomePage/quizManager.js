@@ -28,43 +28,10 @@ DOM.body.addEventListener("click" , async (e) => {
         // Disabling the return to QuestionCount page Btn
         DOM.body.querySelector("#StartQuizPageQuestionCountBtn").disabled = true;
 
+        // Adding Loading Screen
+        DOM.body.innerHTML = await fun.fetchLoadingScreen();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // Adding an Loading Screen Here is a good update
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
+        // Here the real process starts , since the wait is over
         currentState.totalQuestion = Number(apiParameters.apiLinkParameters.QuestionCount);
 
         data = await fun.fetchQuizData();
