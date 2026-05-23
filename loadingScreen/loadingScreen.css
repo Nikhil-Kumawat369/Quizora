@@ -1,0 +1,321 @@
+/*
+    Note:
+    The loading screen was AI-generated and not originally designed by me.
+
+    However, the complete project implementation —
+    including the quiz logic, API integration,
+    state management, UI flow, and overall development —
+    was fully built by me.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,sans-serif;
+}
+
+#loadingScreenBody {
+    min-height:100vh;
+
+    background:#0f0f0f;
+
+    color:white;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+}
+
+/* MAIN */
+
+.loading-container{
+
+    width:min(92%,850px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:2;
+}
+
+/* GLOW CIRCLE */
+
+.loader-ring{
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:45px;
+
+    animation:float 3s ease-in-out infinite;
+}
+
+.loader-ring::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:50%;
+
+    background:
+    conic-gradient(
+        from 0deg,
+        transparent,
+        #e68a3f,
+        transparent
+    );
+
+    animation:spin 1.8s linear infinite;
+}
+
+.loader-ring::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    background:#0f0f0f;
+
+    border-radius:50%;
+}
+
+/* CENTER ICON */
+
+.loader-icon{
+
+    position:relative;
+
+    z-index:2;
+
+    width:95px;
+    height:95px;
+
+    border-radius:28px;
+
+    background:#181818;
+
+    border:1px solid #2b2b2b;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    box-shadow:
+    0 0 25px rgba(230,138,63,0.12);
+}
+
+/* TITLE */
+
+.title{
+
+    font-size:clamp(2.8rem,5vw,4.8rem);
+
+    font-weight:900;
+
+    color:#e68a3f;
+
+    margin-bottom:18px;
+}
+
+/* SUBTEXT */
+
+.description{
+
+    max-width:680px;
+
+    color:#8b8b8b;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    margin-bottom:50px;
+}
+
+/* STATUS */
+
+.status{
+
+    min-height:32px;
+
+    font-size:20px;
+
+    color:#d0d0d0;
+
+    font-weight:600;
+
+    letter-spacing:0.3px;
+}
+
+/* DOTS */
+
+.dots::after{
+
+    content:"";
+
+    animation:dots 1.2s infinite;
+}
+
+/* FLOATING ICONS */
+
+.float-card{
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    border-radius:24px;
+
+    background:#181818;
+
+    border:1px solid #252525;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    opacity:0.16;
+
+    backdrop-filter:blur(8px);
+
+    animation:float 5s ease-in-out infinite;
+}
+
+.card1{
+
+    top:12%;
+    left:8%;
+}
+
+.card2{
+
+    top:18%;
+    right:10%;
+
+    animation-delay:1s;
+}
+
+.card3{
+
+    bottom:12%;
+    left:14%;
+
+    animation-delay:2s;
+}
+
+.card4{
+
+    bottom:10%;
+    right:12%;
+
+    animation-delay:3s;
+}
+
+/* ANIMATIONS */
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-14px);
+    }
+}
+
+@keyframes dots{
+
+    0%{
+        content:"";
+    }
+
+    33%{
+        content:".";
+    }
+
+    66%{
+        content:"..";
+    }
+
+    100%{
+        content:"...";
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .title{
+        font-size:2.4rem;
+    }
+
+    .description{
+        font-size:15px;
+    }
+
+    .loader-ring{
+        width:120px;
+        height:120px;
+    }
+
+    .loader-icon{
+
+        width:82px;
+        height:82px;
+
+        font-size:36px;
+    }
+
+    .float-card{
+        display:none;
+    }
+}

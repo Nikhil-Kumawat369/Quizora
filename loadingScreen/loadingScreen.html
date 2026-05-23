@@ -1,0 +1,83 @@
+<!-- 
+    Note:
+    The loading screen was AI-generated and not originally designed by me.
+
+    However, the complete project implementation —
+    including the quiz logic, API integration,
+    state management, UI flow, and overall development —
+    was fully built by me.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loading Screen</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="loadingScreen.css">
+
+    <!-- Linking JS File -->
+    <script defer type="module" src="loadingScreen.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loadingScreenBody">
+
+        <!-- FLOATERS -->
+
+        <div class="float-card card1">🧠</div>
+        <div class="float-card card2">⚡</div>
+        <div class="float-card card3">🎯</div>
+        <div class="float-card card4">🎮</div>
+
+        <!-- MAIN -->
+
+        <div class="loading-container">
+
+            <!-- LOADER -->
+
+            <div class="loader-ring">
+
+                <div class="loader-icon">
+                    🧩
+                </div>
+
+            </div>
+
+            <!-- TITLE -->
+
+            <h1 class="title">
+                Preparing Your Quiz
+            </h1>
+
+            <!-- TEXT -->
+
+            <p class="description">
+
+                Fetching questions, balancing difficulty, and building a dynamic quiz experience tailored to your selected category.
+
+            </p>
+
+            <!-- STATUS -->
+
+            <div class="status">
+
+                <span id="loadingText" class="dots">
+                    Fetching Questions
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
