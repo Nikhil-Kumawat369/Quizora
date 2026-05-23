@@ -73,7 +73,7 @@ DOM.body.addEventListener("click" , async (e) => {
     if(e.target.classList.contains("CategoriesPageCardConatinerPlayBtn")) {
 
         // Saving the api link generation parameter
-        apiLinkParameters.Category = e.target.dataset.categories;
+        apiLinkParameters.Category = e.target.closest(".CategoriesPageCardConatinerItems").dataset.categories;
         displayableApiParameters.Category = e.target.closest(".CategoriesPageCardConatinerItems").children[1].innerText;
 
         // injection Format Selection Page
@@ -102,31 +102,8 @@ DOM.body.addEventListener("click" , async (e) => {
 
     if(e.target.id === "FormatSelectionPageContinueBtn") {
 
-        // This Var stores the signal that user have selected an option or not
-        let selected = false;
-
-        let formatSelectionCards = window.document.body.querySelectorAll(".FormatSelectionPageFormatOptionContainerItems");
-
-        formatSelectionCards.forEach((val , idx , err) => {
-
-            if(val.classList.contains("selectItem")) {
-
-                // Saving the parameter for generating api link
-                apiLinkParameters.Format = val.dataset.format;
-                displayableApiParameters.Format = val.children[1].innerText;
-
-                selected = true;
-
-            }
-
-        });
-
-        if(selected) {
-
-            // Injecting The Difficulty Selection Page
-            DOM.body.innerHTML = await fun.fetchDifficultySelectionPage();
-
-        }
+        // Injecting The Difficulty Selection Page
+        DOM.body.innerHTML = await fun.fetchDifficultySelectionPage();
 
     }
 
