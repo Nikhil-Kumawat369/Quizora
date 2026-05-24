@@ -195,7 +195,7 @@ This helps users understand the product beyond basic gameplay.
 
 Experience the project live:
 
-🔗 [View Live Demo](Link)
+🔗 [View Live Demo](https://nikhil-kumawat369.github.io/Quizora/HomePage/index.html)
 
 ---
 
