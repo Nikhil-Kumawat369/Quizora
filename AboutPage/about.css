@@ -353,27 +353,28 @@ body {
     padding-right: 30px;
 
     display: grid;
-    grid-template-rows: repeat(2 , auto);
+    grid-template-rows: repeat(1 , auto);
     grid-template-columns: repeat(4 , 1fr);
     gap: 30px;
 }
 
 @media (max-width: 1083px) {
     #aboutPageStepsCardContainer {
+        grid-template-rows: repeat(2 , auto);
         grid-template-columns: repeat(3 , 1fr);
     }
 }
 
 @media (max-width: 792px) {
     #aboutPageStepsCardContainer {
-        grid-template-rows: repeat(3 , auto);
+        grid-template-rows: repeat(2 , auto);
         grid-template-columns: repeat(2 , 1fr);
     }
 }
 
 @media (max-width: 520px) {
     #aboutPageStepsCardContainer {
-        grid-template-rows: repeat(5 , auto);
+        grid-template-rows: repeat(4 , auto);
         grid-template-columns: repeat(1 , 1fr);
     }
 }
