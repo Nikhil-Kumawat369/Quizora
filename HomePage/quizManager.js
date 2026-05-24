@@ -57,6 +57,7 @@ DOM.body.addEventListener("click" , async (e) => {
             if(window.document.querySelector(".selectItem")) {
 
                 DOM.body.querySelector("#MCQNextQuizBtn").disabled = true;
+                DOM.body.querySelector("#MCQSkipQuizBtn").disabled = true;
 
             }
 
@@ -90,6 +91,7 @@ DOM.body.addEventListener("click" , async (e) => {
             if(window.document.querySelector(".selectItem")) {
 
                 DOM.body.querySelector("#MCQNextQuizBtn").disabled = true;
+                DOM.body.querySelector("#MCQSkipQuizBtn").disabled = true;
 
             }
 
@@ -141,3 +143,65 @@ DOM.body.addEventListener("click" , async (e) => {
 
 });
 
+// Once the user clicks Skip Quiz Btn 
+// then the following event listener fires
+DOM.body.addEventListener("click" , async (e) => {
+
+    if(e.target.id === "MCQSkipQuizBtn") {
+
+        // The Question cant be the last question
+        if(currentState.currentQuestion !== currentState.totalQuestion) {
+
+            // Disabling the btns
+            DOM.body.querySelector("#MCQSkipQuizBtn").disabled = true;
+            DOM.body.querySelector("#MCQNextQuizBtn").disabled = true;
+
+            currentState.currentQuestion += 1;
+
+            // Loading the next quiz
+            setTimeout(async () => {
+
+                await fun.render(currentState , data);
+
+            } , 500);
+
+        }else {
+            // If the question is the last question
+
+            // Disabling the btns
+            DOM.body.querySelector("#MCQSkipQuizBtn").disabled = true;
+            DOM.body.querySelector("#MCQNextQuizBtn").disabled = true;
+
+            // Loading the final summary page
+            setTimeout(async () => {
+
+                // Here showing the final end page of the quiz
+                DOM.body.innerHTML = await fun.fetchEndPage();
+
+                // Now updating the end page
+
+                // Upating the category display
+                DOM.body.querySelector("#endPageFormatDisplay").innerText = apiParameters.displayableApiParameters.Category;
+
+                // Updaing the final score
+                DOM.body.querySelector("#endPageFinalScore").innerText = currentState.currentScore;
+
+                // Updaing the Correct Attempts
+                DOM.body.querySelector("#endPageCorrectAnswers").innerText = currentState.correctAnswers;
+
+                // Updaing the InCorrect Answers
+                DOM.body.querySelector("#endPageWrongAnswers").innerText = currentState.inCorrectAnswers;
+
+                // Updaing the Accuracy
+                DOM.body.querySelector("#endPageAccuracy").innerText = `${((currentState.correctAnswers / currentState.totalQuestion) * 100).toFixed(2)}%`;
+
+                // Updating the quiz summary
+                DOM.body.querySelector("#endPageSummary").innerText = `You answered ${currentState.correctAnswers} questions correctly and earned a final score of ${currentState.currentScore} points. Keep practicing different categories and challenge yourself with harder quizzes to improve even further.`;
+
+            } , 500);
+
+        }
+
+    }
+
+});
