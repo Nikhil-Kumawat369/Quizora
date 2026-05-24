@@ -172,6 +172,20 @@ body {
     transform: scale(0.96) !important;
 }
 
+/* MCQ SkipQuiz Btn */
+#MCQSkipQuizBtn {
+    transition: all 0.2s ease 0s;
+}
+
+#MCQSkipQuizBtn:hover {
+    background-color: rgb(25, 25, 25) !important;
+    border-color: rgb(70, 70, 70) !important;
+}
+
+#MCQSkipQuizBtn:active {
+    transform: scale(0.97) !important;
+}
+
 /* question */
 @media (max-width: 400px) {
 
