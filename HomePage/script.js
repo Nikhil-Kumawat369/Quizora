@@ -19,7 +19,8 @@ DOM.body.addEventListener("click" , async (e) => {
 
     if(e.target.id === "homepageNavbarOption1"){
 
-        DOM.body.innerHTML = await fun.fetchHomePage();
+        window.location.reload();
+        // DOM.body.innerHTML = await fun.fetchHomePage();
 
     }
 

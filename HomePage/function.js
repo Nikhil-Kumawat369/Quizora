@@ -216,6 +216,17 @@ export async function fetchLoadingScreen () {
 
 }
 
+// This function fetches loading screen js
+export async function fetchLoadingScreenJS () {
+
+    let response = await fetch("../loadingScreen/loadingScreen.js");
+
+    let jsCode = await response.text();
+
+    return jsCode;
+
+}
+
 // This function fetches & returns the quiz data
 export async function fetchQuizData () {
 

@@ -57,11 +57,19 @@ DOM.body.addEventListener("click" , async (e) => {
 
     if(e.target.id === "CategoriesSelectionPageHomeBtn") {
 
-        DOM.body.innerHTML = await fun.fetchHomePage();
+        // Refreshing the entire page
+        window.location.reload();
 
         root = null;
 
     }
+
+});
+
+// This runs every time page is reloaded or refreshed
+window.addEventListener("load", () => {
+
+    console.log("Page loaded/refreshed");
 
 });
 

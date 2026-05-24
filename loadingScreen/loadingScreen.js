@@ -18,7 +18,7 @@ const loadingMessages = [
 
 ];
 
-const loadingText = document.getElementById("loadingText");
+const loadingText = window.document.body.querySelector("#loadingText");
 
 let currentIndex = 0;
 
@@ -31,6 +31,6 @@ setInterval(() => {
         currentIndex = 0;
     }
 
-    loadingText.textContent = loadingMessages[currentIndex];
+    loadingText.innerText = loadingMessages[currentIndex];
 
 }, 1700);

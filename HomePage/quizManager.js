@@ -30,6 +30,8 @@ DOM.body.addEventListener("click" , async (e) => {
 
         // Adding Loading Screen
         DOM.body.innerHTML = await fun.fetchLoadingScreen();
+        // Attaching the js logic here
+        DOM.body.querySelector("script").innerText = await fun.fetchLoadingScreenJS();
 
         // Here the real process starts , since the wait is over
         currentState.totalQuestion = Number(apiParameters.apiLinkParameters.QuestionCount);
